@@ -39,6 +39,8 @@
 #define TCP_OK 9
 
 
+#define ONEDAYSECOND 86000 //how many seconds in 1 day.
+
 //**********类型定义********
 
 //Command Typedef
@@ -171,7 +173,8 @@ typedef struct shareMem {
 
 	BOOL dbLocked;
 	char uuid[32];
-	int lastHeartBeat;
+	long lastHeartBeat;
+	long lastEnergeCostTime;
 
 } SHAREMEM;
 

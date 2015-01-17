@@ -578,7 +578,7 @@ void writeDBLog(COMMLOG *log) {
 int getEnergeCost(ENERGECOST* cost, int startTime, int endTime) {
 	int i = 0;
 	sprintf(sql,
-			"SELECT GROUPID SUM((ENDTIME - STARTTIME)*DIMMER/10) AS COST  FROM COMMLOG WHERE ENDTIME BETWEEN %d AND %d GROUP BY GROUPID",
+			"SELECT GROUPID, SUM((ENDTIME - STARTTIME)*DIMMER/10) AS COST  FROM COMMLOG WHERE ENDTIME BETWEEN %d AND %d GROUP BY GROUPID",
 			startTime, endTime);
 	openDB();
 	ret = sqlite3_get_table(db, sql, &azResult, &nrow, &ncolumn, &zErrMsg);

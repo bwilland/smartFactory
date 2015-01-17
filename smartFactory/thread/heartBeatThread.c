@@ -137,7 +137,7 @@ void checkDimmer() {
 
 			log.startTime = timeStamp_now;
 			log.endTime = timeStamp_now;
-		//	strcpy(log.groupName, "");
+			//	strcpy(log.groupName, "");
 			log.dimmer = p_groupDimmer->currentDimmer;
 
 			log.groupId = p_groupDimmer->groupID;
@@ -251,34 +251,38 @@ void energeCost() {
 	fprintf(stderr, "************sendenergeCost**************\n");
 
 	BYTE writeBuff[1024];
-	char response[4096], temp[128];
+	char response[4096], temp[128], today[32];
 	time_t timeStamp_Now, time_Start;
 
+	SHAREMEM* shr_mem = get_shm_Memory(FALSE);
+
 	time(&timeStamp_Now);
-	struct tm *timenow;    //实例化tm结构指针
-	timenow = localtime(&timeStamp_Now);
-	if (timenow->tm_hour != 17) {
+
+	if (timeStamp_Now-shr_mem->lastEnergeCostTime < ONEDAYSECOND) {
 		return;
 	}
+
+
 	struct tm timeStart;
+	struct tm *timenow;    //实例化tm结构指针
+	timenow = localtime(&timeStamp_Now);
 	memcpy(&timeStart, timenow, sizeof(struct tm));
 	timeStart.tm_hour = 0;
 	timeStart.tm_min = 0;
+
+	sprintf(today, "%d/%d/%d", timeStart.tm_year + 1900, timeStart.tm_mon + 1,
+			timeStart.tm_mday);
 
 	time_Start = mktime(&timeStart);
 
 	int iCount = getResultCount("GROUPS", NULL );
 	ENERGECOST energeCost[iCount];
+	bzero(&energeCost, sizeof(ENERGECOST) * iCount);
 	getEnergeCost(energeCost, time_Start, timeStamp_Now);
 
-
-
-	SHAREMEM* shr_mem = get_shm_Memory(FALSE);
-
-
 	sprintf(response,
-			"<ROOT><Type>Synchronization</Type><FrameType>EnergyCost</FrameType><GateUID>%s</GateUID><Groups>",
-			shr_mem->uuid);
+			"<ROOT><Type>Synchronization</Type><FrameType>EnergyCost</FrameType><GateUID>%s</GateUID><Date>%s</Date><Groups>",
+			shr_mem->uuid, today);
 
 	release_shm_Memory(shr_mem, FALSE);
 	int i = 0;
