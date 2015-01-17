@@ -1,0 +1,138 @@
+alias.o: alias.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+boa.o: boa.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+buffer.o: buffer.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h
+cgi.o: cgi.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+cgi_header.o: cgi_header.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h
+config.o: config.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h y.tab.h parse.h
+escape.o: escape.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h
+scheduleThread.o: thread/scheduleThread.c thread/scheduleThread.h \
+ thread/../shared/symbol.h thread/../shared/datastruct.h \
+ thread/../serialport.h thread/../actions/control.h \
+ thread/../actions/../shared/dbadapter.h thread/../shared/dbadapter.h \
+ thread/../shared/sharemem.h thread/../shared/../thread/scheduleThread.h \
+ thread/../actions/node.h thread/../shared/lightingpack.h
+schedule.o: actions/schedule.c actions/schedule.h \
+ actions/../shared/symbol.h actions/../shared/datastruct.h \
+ actions/../shared/dbadapter.h actions/node.h actions/control.h \
+ actions/../serialport.h actions/../shared/sharemem.h \
+ actions/../shared/../thread/scheduleThread.h \
+ actions/../shared/lightingpack.h
+serialport.o: serialport.c serialport.h shared/symbol.h \
+ shared/lightingpack.h shared/datastruct.h shared/sharemem.h \
+ shared/dbadapter.h shared/../thread/scheduleThread.h
+actiondispatch.o: actiondispatch.c actiondispatch.h actions/autosearch.h \
+ actions/../shared/symbol.h actions/../shared/datastruct.h \
+ actions/../shared/dbadapter.h actions/node.h actions/area.h \
+ actions/home.h actions/model.h actions/schedule.h actions/control.h
+autosearch.o: actions/autosearch.c actions/autosearch.h \
+ actions/../shared/symbol.h actions/../shared/datastruct.h \
+ actions/../shared/dbadapter.h actions/../shared/lightingpack.h \
+ actions/../serialport.h actions/../shared/sharemem.h \
+ actions/../shared/../thread/scheduleThread.h actions/node.h
+lightingpack.o: shared/lightingpack.c shared/lightingpack.h \
+ shared/symbol.h shared/datastruct.h
+dbadapter.o: shared/dbadapter.c shared/../sqlite3.h shared/dbadapter.h \
+ shared/datastruct.h shared/symbol.h shared/lightingpack.h
+sharemem.o: shared/sharemem.c shared/sharemem.h shared/datastruct.h \
+ shared/symbol.h shared/dbadapter.h shared/../thread/scheduleThread.h
+node.o: actions/node.c actions/node.h actions/../shared/symbol.h \
+ actions/../shared/datastruct.h actions/../shared/dbadapter.h \
+ actions/autosearch.h actions/../serialport.h \
+ actions/../shared/sharemem.h \
+ actions/../shared/../thread/scheduleThread.h \
+ actions/../shared/lightingpack.h
+model.o: actions/model.c actions/model.h actions/../shared/symbol.h \
+ actions/../shared/datastruct.h actions/../shared/dbadapter.h \
+ actions/node.h
+area.o: actions/area.c actions/area.h actions/../shared/symbol.h \
+ actions/../shared/datastruct.h actions/../shared/dbadapter.h \
+ actions/node.h actions/../serialport.h actions/../shared/sharemem.h \
+ actions/../shared/../thread/scheduleThread.h
+control.o: actions/control.c actions/control.h actions/../shared/symbol.h \
+ actions/../shared/datastruct.h actions/../shared/dbadapter.h \
+ actions/node.h actions/area.h actions/../serialport.h \
+ actions/../shared/sharemem.h \
+ actions/../shared/../thread/scheduleThread.h \
+ actions/../shared/lightingpack.h actions/../thread/scheduleThread.h
+home.o: actions/home.c actions/home.h actions/../shared/symbol.h \
+ actions/../shared/datastruct.h actions/../shared/dbadapter.h \
+ actions/node.h actions/area.h actions/../shared/sharemem.h \
+ actions/../shared/../thread/scheduleThread.h
+action.o: action.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h actiondispatch.h
+get.o: get.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+hash.o: hash.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h parse.h
+ip.o: ip.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+log.o: log.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+mmap_cache.o: mmap_cache.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h
+pipe.o: pipe.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+queue.o: queue.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+read.o: read.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+request.o: request.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h
+response.o: response.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h
+select.o: select.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h
+signals.o: signals.c boa.h compat.h config.h defines.h globals.h \
+ serialport.h shared/symbol.h thread/scheduleThread.h \
+ thread/../shared/datastruct.h shared/sharemem.h shared/dbadapter.h \
+ shared/../thread/scheduleThread.h escape.h
+util.o: util.c boa.h compat.h config.h defines.h globals.h serialport.h \
+ shared/symbol.h thread/scheduleThread.h thread/../shared/datastruct.h \
+ shared/sharemem.h shared/dbadapter.h shared/../thread/scheduleThread.h \
+ escape.h
+sublog.o: sublog.c

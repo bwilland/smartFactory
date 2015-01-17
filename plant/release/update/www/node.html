@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Node</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="./js/jquery-1.9.1.js"></script>
+<script src="./js/mboat.js"></script>
+<script src="./js/node.js"></script>
+<script src="./js/ui/jquery.ui.core.js"></script>
+<script src="./js/ui/jquery.ui.widget.js"></script>
+<script src="./js/ui/jquery.ui.mouse.js"></script>
+<script src="./js/ui/jquery.ui.dialog.js"></script>
+<script src="./js/ui/jquery.ui.draggable.js"></script>
+<script src="./js/ui/jquery.ui.position.js"></script>
+<script src="./js/ui/jquery.ui.button.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type = "text/javascript">
+var currentPage = 1;
+$(document).ready(function(){ 
+
+		//initSubMenu();
+	//	initPagination();
+		getServerName();
+		initComp();
+		getNodeList(1);
+		//getAreaList();
+		
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="plant_left_column">
+  		  <h3>LED List</h3>
+    		<div class="plant_leftmenu">
+    			<div style="padding-left:20px;">
+  					<input id="selectAll" type="checkbox" onchange="selectAllNode(this);" />
+  					<label for='selectAll'>Select/Deselect all</label>
+  				</div>
+  				<div id="NODELIST" class="nodeList">
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-sm-9 well form-horizontal" id="plant_right_column">
+        <div class="page-header">
+          <h1>Node Setting</h1>
+        </div>
+    	  <input id="nodeId"  type="hidden"  value="-1" />
+  		  <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">LED MAC:</label>
+          <div class="col-sm-10">
+            <input name="nodeMac" type="text" id="nodeMac" maxlength="8" class="form-control" style="text-transform: uppercase;" placeholder="Example: FFFFFFFF">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Name:</label>
+          <div class="col-sm-10">
+            <input type="text" id="memo"  class="form-control">
+          </div>
+        </div>
+	<div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Node-Type:</label>
+          <div class="col-sm-10">
+  						<select id="nodeType" class="form-control" onChange="changeType(this);">
+  							<option value="0">LED</option>
+							<option value="1">Motor</option>
+  						</select>
+          </div>
+        </div>
+
+ 	<div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 control-label">LED Channel Current:</label>
+              <div class="col-sm-10">
+                <div class="row">
+			<label class="col-sm-3">Channel1  <input type="text" id="channel1Current"  class="form-control" value="100.0">	</label>
+                   	<label class="col-sm-3">Channel2  <input type="text" id="channel2Current"  class="form-control" value="100.0">	</label>
+			<label class="col-sm-3">Channel3  <input type="text" id="channel3Current"  class="form-control" value="100.0">	</label>
+			<label class="col-sm-3">Channel4  <input type="text" id="channel4Current"  class="form-control" value="100.0">	</label>
+                </div>
+              </div>
+            </div>
+<!--
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Node-Area:</label>
+          <div class="col-sm-10">
+  						<select id="nodeArea" class="form-control">
+  							<option value="0">Please select</option>
+  						</select>
+          </div>
+        </div>
+-->
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Motor-MaxSpeed:</label>
+          <div class="col-sm-10">
+            <input type="text" id="maxSpeed"  class="form-control" disabled>			
+          </div>
+        </div>
+	<div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Motor-MaxDistance:</label>
+          <div class="col-sm-10">
+            <input type="text" id="maxDistance"  class="form-control" disabled>			
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Pulses per mm:</label>
+          <div class="col-sm-10">
+            <input type="text" id="pulses"  class="form-control" disabled>			
+          </div>
+        </div>
+  	
+        <div class="form-group">
+          <div class=" col-sm-offset-2">
+            <button class="btn btn-default" onClick="autoSearch();">Auto-Search</button>
+            <button class="btn btn-default" onClick="newNode();">New node</button>
+            <button class="btn btn-default" onClick="saveNode(this);">Save node</button>
+            <button class="btn btn-default" onClick="deleteNode();">Delete node</button>
+ 	    <button class="btn btn-default" onClick="getNodeInfo();">Get node info</button>
+	    <button class="btn btn-default" onClick="getNodeStatus();">Get node status</button>
+	    <button class="btn btn-default" onClick="SetLEDCurrent();">Set LED Current</button>
+            <button class="btn btn-default" onClick="resetNode();">Reset node</button>
+          </div>
+        </div>
+		<legend>NODE Status</legend>
+
+		<div id="NODESTATUS">
+		</div>
+
+    	</div>
+  	</div>
+	</div>
+</div>
+
+</body>
+<div id="AutoSearchDialog" title="Auto Search" style="background:white; color:#000;" align="center">
+<img src="img/wait.gif" width="50" height="50" /><br /><br />
+Searching,please wait... 
+</div>
+<div id="AutoSearchMode" title="Auto Search">
+<p></p>
+<input type="checkbox" id="isResetCOO"/>
+<label for="isResetCOO">Delete all nodes before this search</label>
+</div>
+
+</html>

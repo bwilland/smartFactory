@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Manual</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="./js/mboat.js"></script>
+<script type="text/javascript" src="./js/manu.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript">
+//var interval;//定时
+$(document).ready(function(){ 
+  $(function() {
+     // initSubMenu();
+      getAreaList();
+      getModelList();
+      getServerName();
+  });
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="plant_left_column">
+        <h3>Area List</h3>
+        <div>
+          <input id="selectAll" type="checkbox" onchange="selectAllArea(this);" />
+          <label for='selectAll'>Select/Deselect all</label>
+        </div>
+        <div id="AREALIST"></div>
+      </div>
+      <div class="col-sm-9 well">
+        <div class="page-header">
+          <h1>Manual Control</h1>
+        </div>
+        
+        
+          <fieldset>
+            <legend>LED</legend>
+            <table class="table table-bordered" width="100%">
+              <tr bgcolor="#86c111">
+                <th width="30">Select</th>
+                <th width="90">Model Name</th>
+                <th width="40">Channel 1</th>
+                <th width="40">Channel 2</th>
+                <th width="40">Channel 3</th>
+                <th width="40">Channel 4</th>
+		<th width="50">Motor-mode</th>
+                <th width="50">Direction</th>
+                <th width="50">Speed<br/>(mm/sec)</th>
+                <th width="50">Distance<br/>(mm)</th>
+              </tr>
+            </table>
+            <div id="MODELLIST" class="col-sm-12">
+            </div>
+            
+            <div class="form-group">
+              <button class="btn btn-primary" onClick="openModel();">Start manual</button>
+              <button class="btn btn-default" onClick="watchModel();">Watch Model</button>
+              <button class="btn btn-default" onClick="closeAll();">Close all</button>
+              <button class="btn btn-default" onClick="startReproduction();">Demo</button>
+              <button class="btn btn-default" onClick="stopReproduction();">Demo end</button>
+            </div>
+          </fieldset>
+       
+  <!--
+          <fieldset>
+            <legend>Motor</legend>
+            <div class="form-group row">
+              <label class="col-sm-2 control-label">Motor mode:</label>
+              <div class="col-sm-10">
+                <select class="form-control" name="mode">
+                  <option value="0">Stop</option>
+                  <option value="1">Back And Forward</option>
+                  <option value="2">Goto To End</option>
+                  <option value="3">Move</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 control-label">Direction:</label>
+              <div class="col-sm-10">
+                <select class="form-control" name="direction">
+                  <option value="0">Forward</option>
+                  <option value="1">Reverse</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 control-label">Speed: (mm/sec)</label>
+              <div class="col-sm-10">
+                <input type="number" id="memo"  class="form-control" placeholder="Max Speed: (mm/sec)">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 control-label">Distance: (mm)</label>
+              <div class="col-sm-10">
+                <input type="number" id="memo"  class="form-control" placeholder="Max length: (mm)">
+              </div>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary">Send</button>
+            </div>
+          </fieldset>
+-->
+       <div id="monitorMsg" class="col-sm-12" style="height:150px;overflow:auto;border:1px gray solid;">
+      </div>
+
+            </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

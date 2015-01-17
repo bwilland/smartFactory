@@ -1,0 +1,31 @@
+System:
+Alert message to email address, save in db and provide a page.(can be in 2nd stage.)
+1. lost communication to led or motor nodes.
+2. led error.
+
+resume process after power is back on. (can be in 2nd stage, UI Need to have a choice to configure.)
+Work to do after power failure:[TODO]
+1. resume
+2. skip
+
+Pending question:
+how to allow motor to start mode 2 when it reaches the end.
+
+Missing:
+6.1 getinfo (LED, motor), and once get the info, display the corresponding info.
+
+6.2 reset
+
+7.2 set LED current
+
+7.3 getLED error, and once get the error, display the corresponding error.
+
+7.4 getLED info, and once get the info, display the corresponding info.
+
+7.5 set LED group mask
+
+8.2 get Motor status, and once get the info, display the corresponding info.
+
+When send error/alerts to an email address, specify the SMTP server, port, username, password, etc.
+
+ 

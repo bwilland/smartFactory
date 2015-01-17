@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - System</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="./js/mboat.js"></script>
+<script type="text/javascript" src="./js/system.js"></script>
+<script type="text/javascript" src="./js/jquery.jqpagination.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.dialog.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.position.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.button.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){ 
+ // initSubMenu();
+  initComp();
+  getServerName();
+  getSysDate();
+  getsendSetting();
+	getDbList();
+  
+}); 
+
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+  
+  <div class="container well">
+    <div class="page-header">
+      <h1>System Setting</h1>
+    </div>
+    <div class="row">
+      <div id="ResendSettingDialog" class="col-sm-5">
+ <fieldset>
+            <legend>System Time:</legend>
+            <div class="form-group">
+              <div class="form-static-control">
+		Use:<span id="localTime" style="color:green;" ></span>
+                <input type="button" onclick="setSysDateByLocal();" class="btn btn-primary" value="Correct server time"/>
+              </div>
+<br/>
+		<div class="form-static-control">
+			Server time：<input type="text" id="startDatepicker" style="width:80px;"  />
+			<input type="text" id="dt_hour" style="width:30px;" maxlength="2">:
+			<input type="text" id="dt_min" style="width:30px;" maxlength="2" >
+			<input type="button" onclick="setSysDate();" class="btn btn-primary" value="Correct it"/>
+		</div>
+            </div>
+          </fieldset>
+<fieldset>
+            <legend>DataBase backup/restore:</legend>
+            <div class="form-group">
+              <div class="form-static-control">
+		<button class="btn btn-primary" onclick="backupDB(this);">Backup</button>
+	      </div>
+	    </div>
+<br/>
+	   <div class="form-group">
+              <div class="row">
+                <div class="col-sm-8">
+                 <select id="BackedDBList" class="form-control" >
+		</select>
+                </div>
+                <div class="col-sm-4">
+                 <button class="btn btn-primary" onclick="restoreDB(this);">Restore</button>
+		</div>
+               </div>
+
+                <span class="help-block">
+                  <em>DataBase backup/restore:</em> Please stop all tasks when backup/restore database;
+                </span>
+              </div>
+          
+          </fieldset>
+        
+									
+       
+      </div>
+
+      <div id="databasePad" class="col-sm-5 col-sm-offset-1">
+       
+          
+
+      
+          <fieldset>
+            <legend>Update system from internet:</legend>
+            <div class="form-group">
+              <div class="row">
+			
+		        <div class="col-sm-4">
+		          <button onclick="sysUpdate(0);" class="btn btn-primary">Update locally</button>
+		        </div>
+			
+		</div>
+<span class="help-block">
+                <em>Update locally:</em>Please put file update.tar.gz to server's /plant via FTP, then click "Update locally".
+              </span>
+                 <div class="row">
+			<div class="col-sm-8">
+                 		<input id="updateUrl" type="url" placeholder="ftp://user:password@ftp.server.com/update" class="form-control" />
+               		 </div>
+		        <div class="col-sm-4">
+		          <button onclick="sysUpdate(1);" class="btn btn-primary">Update from internet</button>
+		        </div>
+			
+		</div>
+		
+              <span class="help-block">
+                <em>Update system from internet:</em> please enter the URL below, and then click “Update system from internet”. URL example: ftp://username:password@ftp.biolumic.com/product/01/demo/update/2015-01-15/v2.3/update.tar.gz
+              </span>
+            </div>
+          </fieldset>
+     
+        
+      
+          <fieldset>
+            <legend>Send alert messages to:</legend>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-8">
+                  <input type="email" class="form-control" name="alert_to" placeholder="a@b.c"/>
+                </div>
+                <div class="col-sm-4">
+                  <button class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+       
+             <fieldset>
+<legend>System Reboot:</legend>
+            <div class="form-group">
+              <button class="btn btn-warning col-sm-12" onClick="rebootServer();">Reboot</button>
+              
+            </div>
+          </fieldset>
+      
+          
+       
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<div id="WaitingDialog" title="Please Wait" style="background:white; color:#000;" align="center">
+<img src="img/wait.gif" width="50" height="50" /><br /><br />
+Running,please wait... 
+</div>

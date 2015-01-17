@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Task</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="./js/mboat.js"></script>
+<script type="text/javascript" src="./js/task.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript">
+var distModelCount = 1;
+var arraySelectedMode = new Array(); //选择模式数组
+var CurrentTaskID = -1;
+
+$(document).ready(function(){ 
+  $(function() {
+    //initSubMenu();
+    getTaskId();
+    initComp();
+    getAreaList();
+    getModelList();
+    getServerName();
+    if(CurrentTaskID>0){
+    getTaskInfo();
+    }
+  });
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="plant_left_column">
+        <h3>Area List</h3>
+        <div>
+          <input id="selectAll" type="checkbox" onchange="selectAllArea(this);" />
+          <label for='selectAll'>Select/Deselect all</label>
+        </div>
+        <div id="AREALIST"></div>
+      </div>
+      <div class="col-sm-9 well">
+        <div class="page-header">
+          <h1>Schedule Tasks</h1>
+        </div>
+
+        <div class="row form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Start Time:</label>
+            <div class="col-sm-10">
+              <input type="text" id="startDatepicker" class="pull-left form-control" style="width:120px;" />
+              <input type="text" id="startTime" class="form-control" style="width:80px;" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">End Time:</label>
+            <div class="col-sm-10">
+              <input type="text" id="endDatepicker" class="pull-left form-control" style="width:120px;"/>
+              <input type="text" id="endTime" class="form-control" style="width:80px;"/>
+              <input id="duringTime" type="hidden" onchange="changeDate(this);" value="4" style="width:40px;" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label"> Description: </label>
+            <div class="col-sm-10">
+              <textarea name="taskDescript" id="taskDescript" cols="45" rows="2" maxlength="36" class="form-control">Schedule Task</textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row well">
+          <div class="col-sm-8">
+            <div  class="modelListPan_head">
+              <table width="100%" border="0" cellspacing="0" class="tableStyle">
+                <tr bgcolor="#86c111">
+                  <th width="100">Model </th>
+                  <th width="60">Channel 1</th>
+                  <th width="60">Channel 2</th>
+                  <th width="60">Channel 3</th>
+                  <th width="60">Channel 4</th>
+                  <th width="35">sel </th>
+                </tr>
+              </table>
+            </div>
+            <div class="modelListPan" id="MODELLIST">
+    
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="modelListPan_head">
+              <table width="100%"  border="0" cellspacing="0" class="tableStyle">
+                <tr bgcolor="#86c111">
+                  <th width="33">NO. </th>
+                  <th width="70">Model </th>
+                  <th width="80">Duration (hrs) </th>
+                  <th width="33">del </th>
+                </tr>
+              </table>
+            </div>
+            <div id="DISTMODELLIST" class="modelListPan">
+              <table id="distModelList" width="100%"  border="0" cellspacing="0" class="tableStyle">
+                
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary col-sm-4 col-sm-offset-2" onClick="finished(this);">OK</button>
+          <button class="btn btn-warning col-sm-4 col-sm-offset-1" onclick="self.location.href='schedule.html';">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

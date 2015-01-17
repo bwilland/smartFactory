@@ -1,0 +1,24 @@
+{
+  "name": "smartplant",
+  "version": "0.0.0",
+  "authors": [
+    "liuwenchao <louis.wenchao.liu@gmail.com>"
+  ],
+  "main": "www/index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "Commertial",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aha-partial": "~1.0.2"
+  }
+}

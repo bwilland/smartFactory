@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Schedule</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<link rel="stylesheet" href="./css/jqpagination.css" />
+<link rel="stylesheet" href="./css/schedule.css" />
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="./js/mboat.js"></script>
+<script type="text/javascript" src="./js/schedule.js"></script>
+<script type="text/javascript" src="./js/jquery.jqpagination.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="./js/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.dialog.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.position.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.button.js"></script>
+
+<script type="text/javascript">
+
+var selectedTaskId = -1; //当前选择的任务编号
+var selectedTaskStatus = -1;//当前选择的任务状态
+
+var obj_selectTaskRow = null;
+$(document).ready(function(){ 
+  $(function() {
+   // initSubMenu();
+$("#scheduleDetail").dialog({
+		autoOpen: false,
+		height: 400,
+		width: 500,
+		modal: true,
+		resizable: false
+	});
+	
+    getScheduleList();
+    getServerName();
+    initPagination();
+  });
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+
+  <div class="container well">
+    <div class="row">
+      <div class="col-sm-12" id="plant_right_pan">
+        <div class="page-header">
+          <h1>Schedule</h1>
+        </div>
+
+        <table class="table table-bordered">
+          <tr bgcolor="#86c111">
+            <th width="200" height="40">Area</th>
+            <th width="80" height="40">Status</th>
+            <th width="110">Start Time</th>
+            <th width="110">End Time</th>
+            <th width="220">Description</th>
+            <th width="110">Modified Date</th>
+            <th width="50">Detail</th>
+          </tr>
+        </table>
+
+        <div id="SCHEDULELIST" style="height:300px;"></div>
+
+	<br/>
+        <div class="col-sm-8">
+          <label>
+            <input name="rdQuery" type="checkbox" value="0"  checked="checked" />
+            Wait
+          </label>
+          <label>
+            <input name="rdQuery" type="checkbox" value="1" checked="checked" />
+            Running
+          </label>
+          <label>
+            <input name="rdQuery" type="checkbox" value="2" checked="checked" />
+            Paused
+          </label>
+          <label>
+            <input name="rdQuery" type="checkbox" value="3" />
+            End
+          </label>
+          <button class="btn btn-default" onclick="searchTask(1);">Search</button>
+        </div>
+      
+        <div class="col-sm-4">
+          <div id ="JQpagination" class="gigantic pagination"> 
+          <a href="#" class="first" data-action="first">&laquo; </a> 
+          <a href="#" class="previous" data-action="previous">&lsaquo;</a>
+          <input type="text" readonly="readonly" />
+          <a href="#" class="next" data-action="next">&rsaquo;</a> 
+          <a href="#" class="last" data-action="last">&raquo;</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn btn-default" onclick="self.location.href='task.html?-1';">Add</button>
+      <button class="btn btn-default" onClick="editTask();">Edit</button>
+      <button class="btn btn-default" onClick="deleteTask();">Delete</button>
+      <button class="btn btn-default" onClick="pauseTask();">Pause/Watch</button>
+      <button class="btn btn-default" onClick="resumeTask();">Resume</button>
+      <button class="btn btn-default" onClick="stopTask();">End</button>
+    </div>
+  </div>
+</div>
+<div id="scheduleDetail">
+	<h1>Schedule Detail</h1>
+	<div id="scheduleDetailScription"></div>
+	<h3>Model</h3>
+	<div id="taskDiv"></div>
+	Current running mode in orange.
+	
+</div>
+</body>
+</html>

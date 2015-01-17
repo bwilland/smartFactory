@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Area</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="./js/jquery-1.9.1.js"></script>
+<script src="./js/mboat.js"></script>
+<script src="./js/area.js"></script>
+<script src="./js/ui/jquery.ui.core.js"></script>
+<script src="./js/ui/jquery.ui.widget.js"></script>
+<script src="./js/ui/jquery.ui.mouse.js"></script>
+<script src="./js/ui/jquery.ui.dialog.js"></script>
+<script src="./js/ui/jquery.ui.sortable.js"></script>
+<script src="./js/ui/jquery.ui.draggable.js"></script>
+<script src="./js/ui/jquery.ui.position.js"></script>
+<script src="./js/ui/jquery.ui.button.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type = "text/javascript">
+$(document).ready(function(){ 
+  $(function() {
+   // initSubMenu();
+    initComp();
+    getAreaList();
+   // getPhoto_KrKb();
+    getServerName();
+    var nodeTypeSelected = 0;
+  });
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="plant_left_column">
+        <h3>Area List</h3>
+        <div id="AREALIST"></div>
+      </div>
+      <div class="col-sm-9 well form-horizontal" id="plant_right_column">
+        <div class="page-header">
+          <h1>Area Setting</h1>
+        </div>
+        <input id="areaId" type="hidden" value="-1">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Area name:</label>
+          <div class="col-sm-10">
+            <input type="text" name="areaName" id="areaName" class="form-control" placeholder="Area Name"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Memo:</label>
+          <div class="col-sm-10">
+            <input type="text" name="areaMemo" id="areaMemo" class="form-control" placeholder="Memo" />
+          </div>
+        </div>
+
+  	<div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Group ID assigned:</label>
+          <div class="col-sm-10">
+            <input type="text" name="groupID" id="groupID" class="form-control" disabled/>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class=" col-sm-offset-2">
+            <button class="btn btn-default" onClick="newArea();">New area</button>
+            <button class="btn btn-default" onClick="saveArea(this);">Save area</button>
+            <button class="btn btn-default" onClick="addAreaNode(0);">Add LED nodes</button>
+            <button class="btn btn-default" onClick="addAreaNode(1);">Add Motor nodes</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class=" col-sm-offset-2">
+            <button class="btn btn-default" onClick="areaQuery();">Area search</button>
+            <button class="btn btn-default" onClick="areaSort();">Reorder</button>
+            <button class="btn btn-default" onClick="deleteArea();">Delete area</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="AREANODELIST" title="please select nodes" style="display:none;">
+  <div id="NODELIST_HEAD">
+    <table class='tableStyle' cellspacing='0' cellpadding='0'>
+      <tr bgcolor="#86c111">
+        <th  width='120' height="40px">Node MAC</th>
+        <th  width='180'>Node memo</th>
+        <th width='80'>select</th>
+      </tr>
+    </table>
+  </div>
+  <div id="NODELIST"> </div>
+</div>
+
+<div id="AREASORT" title="Reorder" style="display:none;">
+  Please drag and drop the area for reorder<br />&nbsp;
+  <div id="AREASORTLIST" class="areaSortList">
+
+   </div>
+</div>
+
+<div id="AREAQUERY" title="Area search" style="display:none;">
+  <table width="100%" border="0">
+    <tr>
+      <td colspan="2" align="center" height="60"><font color="#336633"><b>Search node in area</b></font></td>
+    </tr>
+    <tr>
+      <td>Node MAC</td>
+      <td>
+        <input name="areaSort_mac" type="text" id="areaSort_mac" maxlength="8" class="textBox" style="text-transform: uppercase;"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1945 @@
+open serial /dev/ttyUSB0 
+Can't Open Serial Port
+: No such file or directory
+open serial failed!
+shm_id ==65538 
+cmdSendTimes==1 
+Fill share memory by areas...
+area count == 4  
+pArea->id==1 
+pArea->name==123 
+pArea->id==2 
+pArea->name==Test+Area 
+pArea->id==3 
+pArea->name==Tie12 
+pArea->id==4 
+pArea->name==2321 
+Fill share memory by areas  END.
+Fill share memory by Schedule...
+SCHEDULE count == 0  
+Fill share memory by Schedule  END.
+==========createShareNodes OK==========
+=============Schedule server Ready ===============
+=============Schedule server Ready ===============
+[24/Dec/2014:03:57:24 +0000] boa: server version Boa/0.94.13
+[24/Dec/2014:03:57:24 +0000] boa: server built Dec 24 2014 at 03:40:47.
+[24/Dec/2014:03:57:24 +0000] boa: starting server pid=4950, port 8080
+*************action********** /plant/www/index.html
+===========not login===========
+actionName== /HomeManage 
+METHOD==Login
+sql==SELECT PASSWD,ROLE FROM USERS WHERE USERNAME='admin'; 
+error: no such column: ROLE 
+actionName== /HomeManage 
+METHOD==Login
+sql==SELECT PASSWD,ROLE FROM USERS WHERE USERNAME='admin'; 
+error: no such column: ROLE 
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==LogOut
+*************action********** /plant/www/login.html
+===========not login===========
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/index.html
+登录超时,清除数据
+===========not login===========
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/area.html
+登录超时,清除数据
+===========not login===========
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/area.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /AreaManage 
+METHOD==SaveArea
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /AreaManage 
+METHOD==AreaInfo
+areaID==1
+actionName== /AreaManage 
+METHOD==AreaInfo
+areaID==1
+actionName== /AreaManage 
+METHOD==AreaInfo
+areaID==1
+*************action********** /plant/www/area.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/area.html
+登录超时,清除数据
+===========not login===========
+[26/Dec/2014:02:45:39 +0000] request from 10.240.161.146 "GET /js/jquery-1.9.1.js HTTP/1.1" ("/plant/www/js/jquery-1.9.1.js"): pipe write: Broken pipe
+[26/Dec/2014:02:45:40 +0000] request from 10.240.161.146 "GET /js/jquery-1.9.1.js?_fp644=0.6443814113736153 HTTP/1.1" ("/plant/www/js/jquery-1.9.1.js"): pipe write: Broken pipe
+*************action********** /plant/www/index.html
+===========not login===========
+*************action********** /plant/www/index.html
+===========not login===========
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/mode.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /ModelManage 
+METHOD==ModelList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/mode.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /ModelManage 
+METHOD==ModelList
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /ModelManage 
+METHOD==ModelInfo
+modelID==1
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>actionName== /ModelManage 
+METHOD==ModelInfo
+modelID==2
+0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>actionName== /ModelManage 
+METHOD==ModelInfo
+modelID==1
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>*************action********** /plant/www/schedule.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /ScheduleManage 
+METHOD==ScheduleList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /ModelManage 
+METHOD==ModelInfoList
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /ModelManage 
+METHOD==ModelInfoList
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /ModelManage 
+METHOD==ModelInfoList
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>*************action********** /plant/www/schedule.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /ScheduleManage 
+METHOD==ScheduleList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /ModelManage 
+METHOD==ModelInfoList
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /ModelManage 
+METHOD==ModelInfoList
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>actionName== /AreaManage 
+METHOD==AreaList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/task.html
+登录超时,清除数据
+===========not login===========
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/schedule.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /ScheduleManage 
+METHOD==ScheduleList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /ModelManage 
+METHOD==ModelInfoList
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/task.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /ModelManage 
+METHOD==ModelInfoList
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>*************action********** /plant/www/manu.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /ModelManage 
+METHOD==ModelInfoList
+0.00,0.00,0.00,0.00,<model><id>1</id><name>CloseAll</name><type>0</type><ppf1>0.00</ppf1><ppf2>0.00</ppf2><ppf3>0.00</ppf3><ppf4>0.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>0.00,0.00,10.00,10.00,<model><id>2</id><name>WatchMode</name><type>0</type><ppf1>10.00</ppf1><ppf2>10.00</ppf2><ppf3>10.00</ppf3><ppf4>10.00</ppf4><mode>0</mode><modeName>Stop</modeName><direction>0</direction><speed>0.00</speed><distance>0.00</distance></model>*************action********** /plant/www/calibration.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllLEDNodeList
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+actionName== /NodeManage 
+METHOD==SaveNode
+NODEID==-1,memo=node 1,nodeType=0 ,,pulses==0.000000
+actionName== /NodeManage 
+METHOD==AllNodeList
+actionName== /NodeManage 
+METHOD==SaveNode
+NODEID==1,memo=node 2,nodeType=0 ,,pulses==0.000000
+actionName== /NodeManage 
+METHOD==AllNodeList
+actionName== /NodeManage 
+METHOD==SaveNode
+NODEID==-1,memo=node 1,nodeType=0 ,,pulses==0.000000
+actionName== /NodeManage 
+METHOD==SaveNode
+NODEID==-1,memo=node 1,nodeType=0 ,,pulses==0.000000
+actionName== /NodeManage 
+METHOD==AllNodeList
+*************action********** /plant/www/calibration.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /NodeManage 
+METHOD==AllLEDNodeList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/calibration.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /NodeManage 
+METHOD==AllLEDNodeList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/calibration.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /NodeManage 
+METHOD==AllLEDNodeList
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==setNodeCaliberate
+nodeID==2,LEDS==0,4
+2A 71 41 88 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 F0 FF FF FF 00 00 00 00 00 00 25 00 00 00 A0 0F 00 00 4D 7E 00 02 A0 48 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7D 77 23 
+open serial /dev/ttyUSB0 
+Can't Open Serial Port
+: No such file or directory
+open serial failed!
+shm_id ==131076 
+cmdSendTimes==1 
+Fill share memory by areas...
+area count == 1  
+pArea->id==1 
+pArea->name==Test+Area+2 
+Fill share memory by areas  END.
+Fill share memory by Schedule...
+SCHEDULE count == 0  
+Fill share memory by Schedule  END.
+==========createShareNodes OK==========
+=============Schedule server Ready ===============
+=============Schedule server Ready ===============
+[27/Dec/2014:10:58:31 +0000] boa: server version Boa/0.94.13
+[27/Dec/2014:10:58:31 +0000] boa: server built Dec 24 2014 at 03:40:47.
+[27/Dec/2014:10:58:31 +0000] boa: starting server pid=5505, port 8080
+*************action********** /plant/www/calibration.html
+===========not login===========
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/calibration.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /NodeManage 
+METHOD==AllLEDNodeList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/reproduction.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /ReproductionManage 
+METHOD==TimeSpan
+actionName== /ReproductionManage 
+METHOD==ReproductionList
+*************action********** /plant/www/mode.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /ModelManage 
+METHOD==ModelList
+*************action********** /plant/www/mode.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /ModelManage 
+METHOD==ModelList
+*************action********** /plant/www/reproduction.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /ReproductionManage 
+METHOD==TimeSpan
+actionName== /ReproductionManage 
+METHOD==ReproductionList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/reproduction.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /ReproductionManage 
+METHOD==TimeSpan
+actionName== /ReproductionManage 
+METHOD==ReproductionList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==2
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==1
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==2
+actionName== /NodeManage 
+METHOD==SaveNode
+NODEID==-1,memo=motor 1,nodeType=1 ,,pulses==12.000000
+2A 35 41 88 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 FF FF 00 00 00 00 00 00 25 00 00 00 A0 0F 00 00 10 7E 00 01 80 0C 00 00 40 41 00 00 40 41 00 00 05 43 7D 38 23 
+open serial /dev/ttyUSB0 
+Can't Open Serial Port
+: No such file or directory
+open serial failed!
+shm_id ==196614 
+cmdSendTimes==1 
+Fill share memory by areas...
+area count == 1  
+pArea->id==1 
+pArea->name==Test+Area+2 
+Fill share memory by areas  END.
+Fill share memory by Schedule...
+SCHEDULE count == 0  
+Fill share memory by Schedule  END.
+==========createShareNodes OK==========
+=============Schedule server Ready ===============
+=============Schedule server Ready ===============
+[27/Dec/2014:11:04:34 +0000] boa: server version Boa/0.94.13
+[27/Dec/2014:11:04:34 +0000] boa: server built Dec 24 2014 at 03:40:47.
+[27/Dec/2014:11:04:34 +0000] boa: starting server pid=5579, port 8080
+*************action********** /plant/www/node.html
+===========not login===========
+[27/Dec/2014:11:04:38 +0000] request from 10.240.161.146 "GET /js/jquery-1.9.1.js HTTP/1.1" ("/plant/www/js/jquery-1.9.1.js"): pipe write: Broken pipe
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==3
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==2
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==3
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==3
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==2
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==3
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==3
+actionName== /NodeManage 
+METHOD==NodeInfo
+nodeID==2
+*************action********** /plant/www/area.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/area.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /AreaManage 
+METHOD==AreaList
+actionName== /SystemManage 
+METHOD==GetServerName
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+*************action********** /plant/www/node.html
+登录超时,清除数据
+===========not login===========
+actionName== /HomeManage 
+METHOD==Login
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/index.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /HomeManage 
+METHOD==HomeAll
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList
+*************action********** /plant/www/node.html
+=========already login ==! 
+*************action********** /plant/www/bower_components/aha-partial/src/aha-partial.html
+=========already login ==! 
+*************action********** /plant/www/header.html
+=========already login ==! 
+actionName== /SystemManage 
+METHOD==GetServerName
+actionName== /NodeManage 
+METHOD==AllNodeList

@@ -1,0 +1,28 @@
+{
+  "name": "aha-partial",
+  "version": "1.0.2",
+  "description": "A Custom Element that can import other html as a partial",
+  "license": "MIT",
+  "main": "src/aha-partial.html",
+  "keywords": [
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "^0.5.1"
+  },
+  "homepage": "https://github.com/liuwenchao/aha-partial",
+  "_release": "1.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.2",
+    "commit": "5a361927d2cbfc877d4b4ef33ef3c08e34f309b1"
+  },
+  "_source": "git://github.com/liuwenchao/aha-partial.git",
+  "_target": "~1.0.2",
+  "_originalSource": "aha-partial"
+}

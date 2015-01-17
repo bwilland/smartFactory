@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Model</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="./js/jquery-1.9.1.js"></script>
+<script src="./js/mboat.js"></script>
+<script src="./js/model.js"></script>
+
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<script type = "text/javascript">
+//var photoRED = 0;//光量子——红
+//var photoBLUE = 0;//光量子-蓝
+
+$(document).ready(function(){ 
+  $(function() {
+   // initSubMenu();
+   // getPhoto_KrKb();
+    getModelList();
+   // initSlider();
+    getServerName();
+  });
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="plant_left_column">
+        <h3>Mode List</h3>
+        <div id="MODELLIST"></div>
+      </div>
+      <div class="col-sm-9 well form-horizontal" id="plant_right_column">
+        <div class="page-header">
+          <h1>Mode Setting</h1>
+        </div>
+        <input id="modelId" name="modelId" type="hidden" value="-1"/>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Mode name:</label>
+          <div class="col-sm-10">
+            <input type="text" name="modelName" id="modelName" class="form-control" placeholder="Mode Name">
+          </div>
+        </div>
+        <fieldset>
+          <legend>LED</legend>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">ppf for Channel 1 (μmol/s):</label>
+            <div class="col-sm-10">
+              <input name="ppf1" id="ppf1" type="number"  class="form-control" placeholder="0.00" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">ppf for Channel 2 (μmol/s):</label>
+            <div class="col-sm-10">
+              <input id="ppf2" name="ppf2" type="number"  class="form-control" placeholder="0.00" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">ppf for Channel 3 (μmol/s):</label>
+            <div class="col-sm-10">
+              <input id="ppf3" name="ppf3" type="number"  class="form-control" placeholder="0.00" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">ppf for Channel 4 (μmol/s):</label>
+            <div class="col-sm-10">
+              <input id="ppf4" name="ppf4" type="number"  class="form-control" placeholder="0.00" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Motor</legend>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Motor mode:</label>
+            <div class="col-sm-10">
+              <select class="form-control" id ="mode" name="mode">
+                <option value="0">Stop</option>
+                <option value="1">Back And Forward</option>
+                <option value="2">Goto To End</option>
+                <option value="3">Move</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Direction:</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="direction" name="direction">
+                <option value="0">Forward</option>
+                <option value="1">Reverse</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Speed: (mm/sec)</label>
+            <div class="col-sm-10">
+              <input type="number" id="speed"  class="form-control" placeholder="Max Speed: (mm/sec)">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Distance: (mm)</label>
+            <div class="col-sm-10">
+              <input type="number" id="distance"  class="form-control" placeholder="Max length: (mm)">
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <div class=" col-sm-offset-2">
+            <button class="btn btn-default" onClick="newModel();">New mode</button>
+            <button class="btn btn-default" onClick="saveModel(this);">Save mode</button>
+            <button class="btn btn-default" onClick="deleteModel();">Delete mode</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

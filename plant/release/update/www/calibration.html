@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Manual</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="./js/mboat.js"></script>
+<script type="text/javascript" src="./js/calibration.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript">
+//var interval;//定时
+$(document).ready(function(){ 
+  $(function() {
+     // initSubMenu();
+      getNodeList();
+     // getModelList();
+      getServerName();
+  });
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="plant_left_column">
+        <h3>LED Node List</h3>
+        <div id="NODELIST"></div>
+      </div>
+      <div class="col-sm-9 well">
+        <div class="page-header">
+          <h1>Calibration</h1>
+        </div>
+       <input id="nodeId"  type="hidden"  value="-1" />
+          <fieldset>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 control-label">Channel:</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="channel">
+                  <option value="0">Channel 1</option>
+                  <option value="1">Channel 2</option>
+                  <option value="2">Channel 3</option>
+                  <option value="3">Channel 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 control-label">LED Select:</label>
+              <div class="col-sm-10">
+                <div class="row">
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led0" value="0"/>LED1</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led1" value="1"/>LED2</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led2" value="2"/>LED3</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led3" value="3"/>LED4</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led4" value="4"/>LED5</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led5" value="5"/>LED6</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led6" value="6"/>LED7</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led7" value="7"/>LED8</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led8" value="8"/>LED9</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led9" value="9"/>LED10</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led10" value="10"/>LED11</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led11" value="11"/>LED12</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led12" value="12"/>LED13</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led13" value="13"/>LED14</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led14" value="14"/>LED15</label>
+                    <label class="col-sm-3"><input type="checkbox" name="leds" id="led15" value="15"/>LED16</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 control-label">LED PWM %</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" placeholder="50" id="pwm">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 control-label">LED Current (mA)</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" placeholder="0.00" id="current">
+              </div>
+            </div>
+		<div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 control-label">Measured PPF(LED)</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" placeholder="0.00" id="ppf">
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-primary" onClick="sendCaliberation(this);">Send</button>
+              <!--<button class="btn btn-default" onClick="saveCaliberation();">Save</button>-->
+              <button class="btn btn-default" onClick="turnOffAllLed(this);">Turn off all LED</button>
+            </div>
+          </div>
+    
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

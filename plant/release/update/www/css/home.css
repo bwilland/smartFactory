@@ -1,0 +1,72 @@
+td{
+	text-align:center;
+}
+
+
+.paginationPan {
+	float: left;
+	width: 98%;
+	padding-top: 3px;
+	margin-left: 10px;
+}
+
+
+.areainfo {
+	height: 370px;
+	width: 350px;
+	float: left;
+	border-radius:4px;
+	border: thin solid #999;
+	color:#333;
+	margin-left:35px;
+	margin-top: 6px;
+	background-color:#F8F8F8;
+}
+.ppdf-n {
+	width:25px;
+	background-color: #082;
+	background-image: url(../img/shade.png); background-position: bottom; 
+ 	overflow: hidden;
+
+}
+	
+.ppdf-r {
+	width:25px;
+	background-color:red;
+	background-image: url(../img/shade.png); background-position: bottom; 
+	overflow: hidden;
+	
+
+}
+.ppdf-b {
+	width:25px;
+	background-color:#09c;
+	background-image: url(../img/shade.png); background-position: bottom; 
+	overflow: hidden;
+}
+.brightness {
+	width:25px;
+	background-color: #F4F4F4;
+	background-image: url(../img/shade.png); background-position: bottom; 
+ 	overflow: hidden;
+
+}
+.ppfd_border {
+	height: 100px;
+	width:26px;
+	background:#FFF;
+	margin:auto;
+	border:#9C0 thin solid;
+}
+
+
+.areaOn{
+	background:url(../img/onoff.png) no-repeat;
+	width:68px;
+	height:28px;
+	margin:auto;
+	background-position:left;
+}
+.areaOff{
+	background-position:right;
+}

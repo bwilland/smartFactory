@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - User</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="./js/jquery-1.9.1.js"></script>
+<script src="./js/mboat.js"></script>
+<script src="./js/user.js"></script>
+
+<script src="./js/bootstrap.min.js"></script>
+<script type = "text/javascript">
+var currentPage = 1;
+$(document).ready(function(){ 
+
+	//	initSubMenu();
+	//	initPagination();
+		getServerName();
+	//	initComp();
+		getUserList(1);
+		getAreaList();
+		
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="plant_left_column">
+  		  <h3>Users List</h3>
+    		<div class="plant_leftmenu">
+    			
+  				<div id="USERLIST" class="userList">
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-sm-9 well form-horizontal" id="plant_right_column">
+    	  <div class="page-header">
+          <h1>User Setting</h1>
+        </div>
+    	  <input id="userId"  type="hidden"  value="-1" />
+  		  <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Name:</label>
+          <div class="col-sm-10">
+            <input id="userName" type="text" name="userName" maxlength="32" class="form-control" placeholder="user name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Role:</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="role">
+              <option value="0">Regular User</option>
+              <option value="1">Demo User</option>
+              <option value="2">Admin User</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Password:</label>
+          <div class="col-sm-10">
+            <input type="password" id="userPwd"  class="form-control" placeholder="******">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class=" col-sm-offset-2">
+            <button class="btn btn-default" onClick="newUser();">New user</button>
+            <button class="btn btn-default" onClick="saveUser(this);">Save user</button>
+            <button class="btn btn-default" onClick="deleteUser();">Delete user</button>
+          </div>
+        </div>
+  		</div>
+  	</div>
+	</div>
+</div>
+
+</body>
+
+</html>

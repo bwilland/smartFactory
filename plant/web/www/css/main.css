@@ -1,0 +1,14 @@
+.navbar {
+    margin-bottom:0;
+}
+.page-header {
+    margin: 0 0 5px 0;
+    border-bottom-color: #ddd;
+}
+.page-header h1 {
+    font-size:32px;
+    margin: 0 0 0 0;
+}
+.form-group {
+    margin-bottom:5px;
+}

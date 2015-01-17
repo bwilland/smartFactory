@@ -1,0 +1,25 @@
+
+
+.tableStyle {
+	
+	width: 100%;
+	color: #000;
+}
+.tableStyle td {
+	text-align:center;
+}
+.tableStyle .trStyle{
+	cursor: pointer;
+}
+.tableStyle .trChecked{
+	background-color: #F90;
+	cursor: pointer;
+}
+.tableStyle .trStyle:hover{
+	background-color:#eee;
+}
+
+.selected{
+	background-color: #F90;
+}
+

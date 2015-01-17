@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Motor</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="./js/jquery-1.9.1.js"></script>
+<script src="./js/mboat.js"></script>
+<script src="./js/motor.js"></script>
+<script src="./js/ui/jquery.ui.core.js"></script>
+<script src="./js/ui/jquery.ui.widget.js"></script>
+<script src="./js/ui/jquery.ui.mouse.js"></script>
+<script src="./js/ui/jquery.ui.dialog.js"></script>
+<script src="./js/ui/jquery.ui.draggable.js"></script>
+<script src="./js/ui/jquery.ui.position.js"></script>
+<script src="./js/ui/jquery.ui.button.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type = "text/javascript">
+var currentPage = 1;
+$(document).ready(function(){ 
+
+		initSubMenu();
+	//	initPagination();
+		getServerName();
+		initComp();
+		getMotorList(1);
+		getAreaList();
+		
+}); 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" id="plant_left_column">
+  		  <h3>Motors List</h3>
+    		<div class="plant_leftmenu">
+    			<div style="padding-left:20px;">
+  					<input id="selectAll" type="checkbox" onchange="selectAllMotor(this);" />
+  					<label for='selectAll'>Select/Deselect all</label>
+  				</div>
+  				<div id="NODELIST" class="motorList">
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-sm-9 well form-horizontal" id="plant_right_column">
+    	  <input id="motorId"  type="hidden"  value="-1" />
+  		  <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Motor MAC:</label>
+          <div class="col-sm-10">
+            <input name="motorMac" type="text" id="motorMac" maxlength="8" class="form-control" style="text-transform: uppercase;" placeholder="Example: FFFFFFFF">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Name:</label>
+          <div class="col-sm-10">
+            <input type="text" id="memo"  class="form-control" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Pulses per mm:</label>
+          <div class="col-sm-10">
+            <input type="number" id="memo"  class="form-control" placeholder="Pulses per mm">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Max Speed: (mm/sec)</label>
+          <div class="col-sm-10">
+            <input type="number" id="memo"  class="form-control" placeholder="Max Speed: (mm/sec)">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Max length: (mm)</label>
+          <div class="col-sm-10">
+            <input type="number" id="memo"  class="form-control" placeholder="Max length: (mm)">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Motor-Area:</label>
+          <div class="col-sm-10">
+  						<select id="motorArea" class="form-control">
+  							<option value="0">Please select</option>
+  						</select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class=" col-sm-offset-2">
+            <button class="btn btn-default" onClick="autoSearch();">Auto-Search</button>
+            <button class="btn btn-default" onClick="newMotor();">New motor</button>
+            <button class="btn btn-default" onClick="saveMotor(this);">Save motor</button>
+            <button class="btn btn-default" onClick="deleteMotor();">Delete motor</button>
+          </div>
+        </div>
+  		</div>
+  	</div>
+	</div>
+</div>
+
+</body>
+<div id="AutoSearchDialog" title="Auto Search" style="background:white; color:#000;" align="center">
+<img src="img/wait.gif" width="50" height="50" /><br /><br />
+Searching,please wait... 
+</div>
+<div id="AutoSearchMode" title="Auto Search">
+<p></p>
+<input type="checkbox" id="isResetCOO"/>
+<label for="isResetCOO">Delete all motors before this search</label>
+</div>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant lighting control system - Log Query</title>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link rel="import" href="bower_components/aha-partial/src/aha-partial.html">
+<link rel="stylesheet" href="./css/jquery.jqplot.min.css" />
+<link rel="stylesheet" href="./css/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<link rel="stylesheet" href="./css/jqpagination.css" />
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="./js/mboat.js"></script>
+<script type="text/javascript" src="./js/log.js"></script>
+<script type="text/javascript" src="./js/jquery.jqpagination.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="./js/ui/jquery.ui.dialog.js"></script>
+
+<!--[if lt IE 9]><script language="javascript" src="excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="./js/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="./js/jqplot.pieRenderer.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<script type = "text/javascript">
+var startTime,endTime,areaId; //保存查询条件
+
+$(document).ready(function(){ 
+  $(function() {
+
+   // initSubMenu();
+    initComp();
+    getAreaList();
+    getServerName();
+  });
+}); 
+ 
+
+</script>
+</head>
+<body>
+<div id="plant_container">
+  <aha-partial src="header.html"></aha-partial>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" id="plant_right_pan">
+        <div class="page-header">
+          <h1>Operation log query</h1>
+	
+        </div>
+        <table class="table table-bordered">
+          <tr>
+            <td width="66" height="30">Start Time:</td>
+            <td width="220">
+              <input type="text" id="startDatepicker" style="width:110px;" />
+              <input type="text" id="startTime" style="width:60px;" />
+            </td>
+            <td width="66">End time:</td>
+            <td width="220">
+              <input type="text" id="endDatepicker" style="width:110px;"/>
+              <input type="text" id="endTime" style="width:60px;" />
+            </td>
+            <td width="35">Area:</td>
+            <td width="103">
+              <select id="nodeArea">
+                <option value="0" selected="selected">All areas</option>
+              </select>
+            </td>
+            <td width="122">
+              <button class="btn btn-primary" onclick="searchLog();">Search</button>
+            </td>
+          </tr>
+        </table>
+        <table class="table table-striped">
+          <tr bgcolor="#86c111">
+            <th width="140" height="40">Date Time</th>
+            <th width="150">Area name</th>
+            <th width="120">Model name</th>
+            <th width="120">Operation type</th>
+            <th width="100">PPF1</th>
+            <th width="100">PPF2</th>
+            <th width="100">PPF3</th>
+	<th width="100">PPF4</th>
+          </tr>
+        </table>
+        <div class="logpan" id="LOGLIST">
+      </div>
+      <div id="JQpagination" class="gigantic pagination"> 
+        <a href="#" class="first" data-action="first">&laquo;</a> 
+        <a href="#" class="previous" data-action="previous">&lsaquo;</a>
+        <input type="text" readonly="readonly"/>
+        <a href="#" class="next" data-action="next">&rsaquo;</a> 
+        <a href="#" class="last" data-action="last">&raquo;</a> 
+      </div>
+    </div>
+  </div>
+
+  <div id="logDetail" style="display:none;" >
+    <div class="col-sm-12">
+      <h1>Log Detail</h1>
+      <div id="logDetailScription"></div>
+      <!--<div id="chartdiv" style="margin-top:20px; margin-left:20px; width:460px; height:300px;"></div>-->
+      <button class="btn btn-default" onclick="$('#logDetail').fadeOut();">Close</button>
+    </div>
+  </div>
+</div>
+
+</html>

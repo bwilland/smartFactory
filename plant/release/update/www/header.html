@@ -1,0 +1,48 @@
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="" href="#">
+      <img alt="Plant lighting control system" style="height:50px;" src="./img/logo.gif">
+    </a>
+    </div>
+    <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          Settings 
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="area.html">Area setting</a></li>
+          <li><a href="node.html">Node setting</a></li>
+         <!-- <li><a href="motor.html">Motor setting</a></li>-->
+          <li><a href="mode.html">Mode setting</a></li>
+          <li><a href="reproduction.html">Demo modes</a></li>
+          <li><a href="calibration.html">Calibration</a></li>
+          <li><a href="logQuery.html">Operation log query</a></li>
+	  <li><a href="logLogin.html">User log query</a></li>
+          <li><a href="system.html">System setting</a></li>
+          <li><a href="user.html">User setting</a></li>
+        </ul>
+      </li>
+      <li><a href="manu.html">Manual Control</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="index.html">Tasks</a></li>
+      <li><a href="#" class="btn btn-link" onclick="aboutMe();">About</a></li>
+      <li><button type="button" class="btn btn-default navbar-btn" onclick="logout();">Quit</button></li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <a id="lblServerName" class="btn btn-link text-muted" title="Click to change" onclick="modiServerName()">
+      Server ID
+      </a>
+      <input id="serverName" class="form-control" type="text" value="Server ID" style="display:none" onblur="saveServerName();"/>
+    </form>
+    </div>
+  </div>
+</nav>
